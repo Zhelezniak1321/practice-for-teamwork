@@ -30,12 +30,13 @@ class Helicopter:
         self.__flight_hours = flight_hours
 
     def __str__(self):
-        return (f"Helicopter {self.__name} can carry {self.__passengers} passengers at "
-                f"a max speed of {self.__max_speed} with {self.__flight_hours} flight hours")
+        return (f"Helicopter {self._name} can carry {self._passengers} passengers "
+                f"at a max speed of {self._max_speed} with {self._flight_hours} "
+                f"flight hours")
 
     def __repr__(self):
-        return (f"Helicopter (name={self.__name}, passengers={self.__passengers}, "
-                f"max speed={self.__max_speed}, flight hours={self.__flight_hours})")
+        return (f"Helicopter(name={self._name}, passengers={self._passengers}, "
+                f"max_speed={self._max_speed}, flight_hours={self._flight_hours})")
 
 def main():
     helicopter1 = Helicopter(4, "Skyline SL-222", 250, 1500)
